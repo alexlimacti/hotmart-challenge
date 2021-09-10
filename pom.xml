@@ -16,6 +16,7 @@
     <properties>
         <java.version>11</java.version>
         <spring-cloud.version>2020.0.3</spring-cloud.version>
+        <flyway-maven-plugin.version>7.15.0</flyway-maven-plugin.version>
     </properties>
     <dependencies>
         <dependency>
@@ -51,6 +52,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-maven-plugin</artifactId>
+            <version>${flyway-maven-plugin.version}</version>
         </dependency>
     </dependencies>
     <dependencyManagement>
