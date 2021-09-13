@@ -1,0 +1,1 @@
+alter table if exists product add column score float4 not null;

@@ -1,0 +1,1 @@
+drop table if exists sale_product_list;

@@ -1,0 +1,1 @@
+alter table if exists sale add column purchaser_score integer;

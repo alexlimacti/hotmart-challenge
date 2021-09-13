@@ -5,7 +5,6 @@ import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.List;
 
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
@@ -27,8 +26,10 @@ public class Sale implements Serializable {
     @JoinColumn(name = "purchaser_id", referencedColumnName = "id")
     private Purchaser purchaser;
 
-    @ManyToMany
+    @ManyToOne
     @JoinColumn(name = "product_id", referencedColumnName = "id")
-    private List<Product> productList;
+    private Product product;
+
+    private Integer purchaserScore;
 
 }
